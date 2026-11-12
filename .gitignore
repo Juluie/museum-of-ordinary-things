@@ -1,0 +1,35 @@
+# Dependencies & builds
+node_modules/
+dist/
+dist-ssr/
+coverage/
+playwright-report/
+test-results/
+.tmp/
+
+# Environment & secrets — never commit real values
+.env
+.env.*
+!.env.example
+supabase/.env
+supabase/functions/.env
+supabase/.temp/
+supabase/.branches/
+*.pem
+*.key
+
+# User uploads, database dumps, logs
+uploads/
+*.dump
+*.sql.gz
+backups/
+logs/
+*.log
+
+# Editors & OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.swp
+*.local

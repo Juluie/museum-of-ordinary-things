@@ -1,0 +1,48 @@
+{
+  "name": "museum-of-ordinary-things",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "oxlint --deny-warnings",
+    "typecheck": "tsc -b",
+    "typecheck:functions": "deno check supabase/functions/*/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "check:bundle": "node scripts/check-bundle.mjs",
+    "check": "npm run lint && npm run typecheck && npm run test && npm run build && npm run check:bundle"
+  },
+  "dependencies": {
+    "@fontsource-variable/literata": "^5.3.0",
+    "@fontsource-variable/onest": "^5.3.1",
+    "@supabase/supabase-js": "^2.109.0",
+    "deno": "^2.9.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router": "^7.18.5"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.16",
+    "@imagemagick/magick-wasm": "^0.0.46",
+    "@playwright/test": "^1.59.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.10",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "jsdom": "^29.1.1",
+    "oxlint": "^1.90.0",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.6",
+    "vitest": "^4.1.12"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
