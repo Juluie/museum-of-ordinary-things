@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <rect width="1200" height="800" fill="#dfe1dc"/>
+  <g fill="none" stroke="#2a2620" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="600" cy="560" rx="300" ry="40" fill="#c9cbc4" stroke="none"/>
+    <path d="M360 500 Q340 360 470 300 Q600 250 740 290 Q880 330 850 470 Q830 560 620 570 Q400 580 360 500 Z" fill="#a9aaa2"/>
+    <path d="M420 430 Q560 380 780 420" stroke="#f3f1ea" stroke-width="10"/>
+    <path d="M470 360 q30 -10 50 6 M650 330 q24 6 30 24 M700 500 q-30 16 -60 6" stroke-width="4"/>
+  </g>
+</svg>
