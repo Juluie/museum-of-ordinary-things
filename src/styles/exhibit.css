@@ -1,0 +1,123 @@
+/* Карточка экспоната. Фото лежит на «паспарту» — это объединяет снимки с разными фонами. */
+.exhibit {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.exhibit-figure {
+  margin: 0;
+  background: var(--color-surface);
+  padding: clamp(var(--space-4), 3vw, var(--space-7));
+  display: grid;
+  place-items: center;
+  min-height: 16rem;
+  position: sticky;
+  top: var(--space-5);
+}
+.exhibit-figure img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: min(72vh, 52rem);
+  object-fit: contain; /* фото целиком, без обрезки и растяжения */
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+
+.exhibit-image-fallback {
+  display: grid;
+  gap: var(--space-3);
+  justify-items: center;
+  text-align: center;
+  color: var(--color-ink-soft);
+  font-size: var(--text-sm);
+  padding: var(--space-6);
+}
+
+.exhibit-body {
+  display: grid;
+  gap: var(--space-5);
+  padding-top: var(--space-2);
+}
+
+.exhibit-number {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: var(--line-width) solid var(--color-line-strong);
+}
+
+.exhibit-title {
+  font-size: var(--text-title);
+  line-height: 1.12;
+  font-variation-settings: 'opsz' 48;
+}
+
+.exhibit-story {
+  font-family: var(--font-text);
+  font-size: var(--text-story);
+  line-height: var(--leading-text);
+  white-space: pre-line; /* абзацы автора сохраняются, HTML не интерпретируется */
+  overflow-wrap: anywhere;
+  max-width: var(--measure);
+}
+
+.exhibit-meta {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: var(--space-2) var(--space-5);
+  margin: 0;
+  padding-top: var(--space-4);
+  border-top: var(--line-width) solid var(--color-line);
+  font-size: var(--text-sm);
+}
+.exhibit-meta dt {
+  color: var(--color-ink-soft);
+}
+.exhibit-meta dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.exhibit-actions {
+  display: grid;
+  gap: var(--space-4);
+  padding-top: var(--space-2);
+}
+.exhibit-actions .actions {
+  gap: var(--space-3);
+}
+.exhibit-hint {
+  font-size: var(--text-sm);
+  color: var(--color-ink-soft);
+  min-height: 1.5em;
+}
+
+@media (max-width: 860px) {
+  .exhibit {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-5);
+  }
+  .exhibit-figure {
+    position: static;
+    margin-inline: calc(var(--page-gutter) * -1);
+  }
+  .exhibit-figure img {
+    max-height: 70vh;
+  }
+  .exhibit-actions .btn {
+    flex: 1 1 auto;
+  }
+}
+
+/* Скелет при загрузке */
+.exhibit-skeleton .exhibit-figure {
+  min-height: 24rem;
+}
+.skeleton-line {
+  height: 1em;
+  background: var(--color-surface);
+  margin-block: var(--space-2);
+}

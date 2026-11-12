@@ -1,0 +1,65 @@
+/* Дизайн-токены. Чтобы сменить оформление — меняй значения здесь. */
+:root {
+  /* Цвет */
+  --color-paper: #f3efe6;        /* фон страницы — тёплая бумага */
+  --color-surface: #ebe5d8;      /* паспарту под фото, поля */
+  --color-surface-raised: #faf8f2;
+  --color-ink: #1d1b17;          /* основной текст */
+  --color-ink-soft: #57524a;     /* служебный текст (контраст ≈ 7:1 на paper) */
+  --color-line: #cfc6b4;         /* тонкие линии */
+  --color-line-strong: #1d1b17;
+  --color-accent: #8a2d1b;       /* единственный акцент — кирпично-красный */
+  --color-accent-ink: #fbf8f2;   /* текст на акценте */
+  --color-error: #9a1b1b;
+  --color-error-bg: #f6e3dd;
+  --color-success: #2e5a38;
+  --color-success-bg: #e2ecdf;
+  --color-demo: #6b4a00;
+  --color-demo-bg: #f1e2b8;
+  --color-focus: #1f4fb8;
+
+  /* Шрифты: локальные файлы, без внешних запросов */
+  --font-display: 'Literata Variable', 'Iowan Old Style', Georgia, 'PT Serif', serif;
+  --font-text: 'Literata Variable', Georgia, 'PT Serif', serif;
+  --font-ui: 'Onest Variable', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Кегли */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-story: clamp(1.0625rem, 0.98rem + 0.3vw, 1.1875rem);
+  --text-lg: 1.25rem;
+  --text-title: clamp(1.75rem, 1.2rem + 2.2vw, 2.75rem);
+  --text-hero: clamp(2.75rem, 1.4rem + 6.5vw, 6.5rem);
+
+  --leading-tight: 1.05;
+  --leading-snug: 1.25;
+  --leading-text: 1.62;
+  --tracking-label: 0.08em;
+
+  /* Отступы */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem;
+
+  /* Сетка */
+  --page-max: 78rem;
+  --page-gutter: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
+  --measure: 36rem;
+
+  /* Формы */
+  --radius: 2px;
+  --line-width: 1px;
+  --control-height: 3rem;
+
+  /* Движение */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --duration-appear: 420ms;
+  --duration-fast: 140ms;
+}
