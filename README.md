@@ -3,7 +3,7 @@
 Маленький онлайн-музей предметов, которые люди хранят без особой причины. Посетитель открывает случайный экспонат — фото и короткую историю, — листает дальше и может принести свою вещь. Новые вещи появляются на сайте только после ручной проверки.
 
 - Сайт: `<ЗАПОЛНИТЬ после первой публикации: https://….pages.dev>`
-- Репозиторий: `<ЗАПОЛНИТЬ после создания: https://github.com/<owner>/museum-of-ordinary-things>` (приватный)
+- Репозиторий: [github.com/Juluie/museum-of-ordinary-things](https://github.com/Juluie/museum-of-ordinary-things) (приватный)
 
 **Стек:** React 19, TypeScript, Vite, React Router, обычный CSS · Supabase (Postgres, приватный Storage, Auth, Edge Functions) · Cloudflare Pages · Cloudflare Turnstile.
 

@@ -1,0 +1,5 @@
+{
+  "//": "Только для deno check в CI и локально. Supabase при деплое этот файл не использует.",
+  "nodeModulesDir": "none",
+  "lock": false
+}

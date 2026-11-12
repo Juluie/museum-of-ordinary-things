@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "oxlint --deny-warnings",
     "typecheck": "tsc -b",
-    "typecheck:functions": "deno check supabase/functions/*/index.ts",
+    "typecheck:functions": "deno check --config supabase/functions/deno.check.json supabase/functions/*/index.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",

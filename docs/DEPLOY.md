@@ -11,7 +11,7 @@ GitHub Actions только проверяет код (`.github/workflows/ci.yml
 
 ## 1. Репозиторий
 
-Код хранится в приватном репозитории GitHub `<owner>/museum-of-ordinary-things` (ссылка появится в README после создания). Как с ним работать — docs/GITHUB.md.
+Код хранится в приватном репозитории GitHub [Juluie/museum-of-ordinary-things](https://github.com/Juluie/museum-of-ordinary-things). Как с ним работать — docs/GITHUB.md.
 
 ## 2. Cloudflare Pages (Git-интеграция)
 

@@ -12,7 +12,7 @@
 ## 1. Где находится проект
 
 - Папка: `museum-of-ordinary-things/` (в облачной среде Perplexity Computer — `/home/user/workspace/museum-of-ordinary-things`).
-- На GitHub: `<ЗАПОЛНИТЬ после создания: https://github.com/<owner>/museum-of-ordinary-things>` — **приватный**, видишь только ты и те, кого пригласишь.
+- На GitHub: [github.com/Juluie/museum-of-ordinary-things](https://github.com/Juluie/museum-of-ordinary-things) — **приватный**, видишь только ты и те, кого пригласишь.
 
 ## 2. Репозиторий
 
@@ -25,7 +25,7 @@
 На новом компьютере (нужны Node 22 и Git):
 
 ```bash
-gh repo clone <owner>/museum-of-ordinary-things   # или git clone https://github.com/<owner>/museum-of-ordinary-things.git
+gh repo clone Juluie/museum-of-ordinary-things   # или git clone https://github.com/Juluie/museum-of-ordinary-things.git
 cd museum-of-ordinary-things
 npm ci
 npm run dev        # откроется demo-версия на http://localhost:5173
